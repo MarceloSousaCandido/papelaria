@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Papelaria Fabiano</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="papelaria">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!-- style="background: #3d3f94"-->
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/!">
+                    <img src="img/logopapelaria.jpg" alt="Logo Papelaria Fabiano" width="150" height="50">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/!">Home</a>
+                    </li>
+                    <li>
+                        <a href="#!empresa">A Empresa</a>
+                    </li>
+                    <li>
+                        <a href="#!servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#!produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#!contato">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Heading Row -->
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive img-rounded" src="img/volta_aulas.png" alt="Volta As Aulas">
+            </div>
+            <!-- /.col-md-8 -->
+            <div class="col-md-4">
+                <img class="img-responsive img-rounded" src="img/chamex_png.png" alt="Sulfite Chamex">
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Well -->
+        <div ng-view></div>
+        <!-- /.row -->
+
+        <!-- /.row -->
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-6">
+                    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5029197667513!2d-47.17782798542009!3d-22.89481388501786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b9ab51a8e43b%3A0x3b04c797d15c7636!2sR.+Ant%C3%B4nio+Fernandes+Leite%2C+254+-+Jardim+Santa+Izabel%2C+Hortol%C3%A2ndia+-+SP%2C+13185-530!5e0!3m2!1spt-BR!2sbr!4v1501870555074" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+                </div>
+                <div class="col-md-6">
+                    <center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpapelariafabiano&tabs&width=400&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                    <strong>
+                        <div class="col-md-6" style="border-style: solid; border-width: thin;">
+                        <p class="text-center"> Endereço: Rua Antônio Fernandes Leite, 254 </p>
+                        <p class="text-center">Jd Rosolem - Hortolândia-SP </p>
+                        <p class="text-center"> Telefone: (19) 3845-3756 </p>
+                        </div>
+                        <div class="col-md-6" style="border-style: solid; border-width: thin;">
+                        <p class="text-center"> Horário de Funcionamento: </p>
+                        <p class="text-center"> Segunda a Sexta: 8:00 às 17:45h. </p>
+                        <p class="text-center"> Sábado: 8:00 às 15h. </p>
+                        </div>
+                    </strong>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row" style="background: black; color: gray">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright &copy; Papelaria Fabiano 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    <script>
+      var app = angular.module("papelaria", ["ngRoute"]);
+      app.config(function($routeProvider) {
+      $routeProvider
+        .when("/", {
+          templateUrl : "home.html"
+        })
+        .when("/empresa", {
+          templateUrl : "empresa.html"
+        })
+        .when("/servicos", {
+          templateUrl : "servicos.html"
+        })
+        .when("/produtos", {
+          templateUrl : "produtos.html"
+        })
+        .when("/contato", {
+          templateUrl : "contato.html"
+        })
+      });
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="angular/angular.min.js"></script>
+    <script src="angular/angular-route.js"></script>
+
+</body>
+</html>

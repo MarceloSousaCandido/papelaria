@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Contato - Papelaria Fabiano</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <link href="scripts/angular/angular.min.js" rel="stylesheet">
+    <link href="scripts/angular/angular-route.js" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="contato">
+    <div class="container">
+        <h2>Contato</h2>
+        <p> Use o formulário abaixo para enviar seu comentário, crítica, sugestão ou dúvida.</p>
+        <p> Preencha todos os campos com *.</p>
+        <form method="post" action="formail.php">
+            <input type="hidden" name="emaildest" value="msc18a@gmail.com">
+            <input type="hidden" name="redirecionar" value="suapagina.html">
+            <div class="form-group">
+                <label for="nome">Nome: * </label>
+                <input class="form-control" type="text" name="nome" id="nome" autofocus required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail: * </label>
+                <input class="form-control" type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">Assunto: * </label>
+                <input class="form-control" type="text" name="assunto" id="assunto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem: * </label>
+                <textarea class="form-control" rows="3" type="text" name="mensagem" id="mensagem" required> </textarea>
+            </div>
+
+            <button class="btn btn-primary "name="enviar" type="submit"> Enviar </button>
+            <button class="btn btn-primary "name="limpar" type="reset"> Limpar </button>
+        </form>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
